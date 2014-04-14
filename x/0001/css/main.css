@@ -176,6 +176,15 @@ footer .inner {
   color: #222;
 }
 
+.digits[data-digit="am"] .am,
+.digits[data-digit="pm"] .pm {
+  color: #222;
+}
+
+.digits[data-digit="pm"] {
+  top: -1.5em;
+}
+
 .digits[data-digit="one"] {
   top: -1.5em;
 }

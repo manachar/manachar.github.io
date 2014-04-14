@@ -22,7 +22,7 @@ $(function() {
        s = time.getSeconds().toString(),
        m = time.getMinutes().toString(),
        h = time.getHours(),
-      pm = 'am';
+    ampm = 'am';
     if (h >= 12) {
       h -= 12;
       h = h === 0 ? 12 : h;
@@ -48,6 +48,10 @@ $(function() {
     }
     // Hour
     $('.hour').attr('data-digit', numNames[h]);
+    // AMPM
+    $('.ampm').attr('data-digit', ampm);
+    
+    
   };
 
   var theClock = window.setInterval(makeTime, 500);
