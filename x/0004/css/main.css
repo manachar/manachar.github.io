@@ -1,0 +1,134 @@
+body {
+    /*background: #FDEBBD;*/
+    background: #FDEBBD url("../images/paper.jpg");
+    color: #402306;
+    margin: 0;
+    padding: 0;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.container {
+  padding: 2em 1em;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 40em;
+}
+
+.snowflakes {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  border-top: 1px solid rgba(64, 35, 6, .25);
+  border-bottom: 1px solid rgba(64, 35, 6, .25);
+  margin: 1em 0;
+  padding: 1em;
+  position: relative;
+}
+
+header:after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  bottom: -3px;
+  height: 72px;
+  width: 54px;
+  background: url("../images/palm.png") no-repeat;
+  background-size: cover;
+
+}
+
+main {
+  margin: 0;
+  padding: 1em;
+}
+
+footer {
+  border-top: 1px solid rgba(64, 35, 6, .25);
+  margin: 1em auto;
+  padding: 1em;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 span.title-date {
+  font-size: .5em;
+  display: block;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: #AD5400;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cal-day {
+  display: inline-block;
+  width: 130px;
+  height: 88px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+.cal-day-cover {
+  text-align: center;
+  font-size: 48px;
+  padding: 20px 0;
+  line-height: 1;
+  color: rgba(0,0,0,.25);
+  cursor: no-drop;
+}
+
+.cal-day-contents {
+  display: none;
+  text-align: center;
+  background: rgba(0,0,0,.125);
+  padding: 10px;
+  width: 100%;
+  height: 88px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.cal-day-contents .fa {
+  display: block;
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.cal-day.ok .cal-day-cover {
+  color: #402306;
+  cursor: pointer;
+}
+
+.cal-day.active .cal-day-cover {
+  display: none;
+}
+.cal-day.active .cal-day-contents {
+  display: block;
+}
