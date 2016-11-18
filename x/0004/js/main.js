@@ -94,6 +94,25 @@ require({
 
   });
 
+  var easter_egg = new Konami(
+    function() {
+
+      alert('You are the sort of person who reads the end of the book first, aren\'t you?');
+
+      $days.each(function(){
+        var $day = $(this),
+            month = $day.data('month'),
+            day = $day.data('day'),
+            year = $day.data('year'),
+            date = new Date(year, month, day);
+
+        $day.addClass('ok');
+        okDays.push(day);
+      });
+
+    }
+  );
+
   // Heavily based on http://threejs.org/examples/webgl_particles_sprites
 
   var container;
