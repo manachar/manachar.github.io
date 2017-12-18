@@ -1,0 +1,145 @@
+body {
+    /*background: #FDEBBD;*/
+    background: #DA4C26 url("../images/background.png");
+    color: #FBE5D3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 14px;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+.container {
+  padding: 2em 1em;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+.snowflakes {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+header {
+  border-top: 1px solid #FBE5D3;
+  border-bottom: 1px solid #FBE5D3;
+  margin: 1em 0;
+  padding: 1em;
+  position: relative;
+}
+
+header:after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  bottom: 25px;
+  height: 100px;
+  width: 80px;
+  background: url("../images/oldfashioned.png") no-repeat;
+  background-size: cover;
+
+}
+
+main {
+  margin: 0;
+  padding: 1em;
+}
+
+footer {
+  border-top: 1px solid rgba(64, 35, 6, .25);
+  margin: 1em auto;
+  padding: 1em;
+  font-size: 8px;
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase
+}
+
+h1 span.title-date {
+  font-size: .5em;
+  display: block;
+  margin: 0 0 1em 0;
+}
+
+h1 span.title-text {
+  font-size: 1.5em;
+  display: block;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: #EB7D23;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.cal-day {
+  display: inline-block;
+  width: 130px;
+  height: 88px;
+  vertical-align: middle;
+  margin-bottom: 4px;
+}
+
+.cal-day-cover {
+  text-align: center;
+  font-size: 48px;
+  padding: 20px 0;
+  line-height: 1;
+  color: rgba(235,125,35,.25);
+  cursor: no-drop;
+}
+
+.cal-day-contents {
+  display: none;
+  text-align: center;
+  background: rgba(0,0,0,.125);
+  padding: 10px;
+  width: 100%;
+  height: 88px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 6px;
+  text-transform: uppercase;
+  line-height: 1.6;
+}
+
+.cal-day-contents .fa {
+  display: block;
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+.cal-day.ok .cal-day-cover {
+  color: #FBE5D3;
+  cursor: pointer;
+}
+
+.cal-day.active .cal-day-cover {
+  display: none;
+}
+.cal-day.active .cal-day-contents {
+  display: block;
+}
